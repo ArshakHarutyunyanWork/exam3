@@ -227,7 +227,7 @@ function clean1() {
     return del(path.clean);
 
 }
-let watch1 = gulp.series(clean1, pug1, html, sprite, css, js, fontsotf, fonts, imgcompress, gulp.parallel(watchFiles, browserSsync)); //fav   svg
+let watch1 = gulp.series(clean1, pug1, html, css, js, fontsotf, fonts, imgcompress, gulp.parallel(watchFiles, browserSsync)); //  sprite,   fav   svg
 
 exports.pug1 = pug1
 exports.svg = svg;

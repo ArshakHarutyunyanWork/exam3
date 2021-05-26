@@ -1,0 +1,113 @@
+$pt:'PTSans-Regular',
+sans-serif;
+$playfair:'PlayfairDisplay-VariableFont_wght',
+sans-serif;
+$postno:'PostNoBillsJaffnaRegular400',
+sans-serif;
+$black: #000000;
+$white: #ffffff;
+$navbg:#0F0F0F;
+.collection {
+    display: flex;
+    .collection-left {
+        flex-basis: 55%;
+        text-align: center;
+        h1 {
+            margin: 93px 0 50px;
+            line-height: 48px;
+            font-family: $playfair;
+        }
+        .line {
+            height: 1px;
+            width: 120px;
+            background: $white;
+            margin: 0 auto 25px;
+        }
+        .products {
+            display: flex;
+            .product-box {
+                margin: 25px;
+                .img-box {
+                    width: 260px;
+                    height: 325px;
+                    background: #191B1C;
+                    img {
+                        padding-top: 55px;
+                    }
+                }
+                h3 {
+                    font-family: $playfair;
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin: 25px 0 10px;
+                    text-align: start;
+                }
+                p {
+                    font-family: $playfair;
+                    font-size: 16px;
+                    line-height: 21px;
+                    text-align: start;
+                    margin-bottom: 93px;
+                }
+            }
+        }
+    }
+    .collection-right {
+        flex-basis: 45%;
+        background-image: url(../img/collectionleftbg.jpg);
+        min-height: 730px;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 112px;
+        .new-collection {
+            display: inline-block;
+            h1 {
+                font-size: 36px;
+                line-height: 48px;
+                text-transform: uppercase;
+            }
+            .line {
+                height: 1px;
+                width: 120px;
+                background: $white;
+                margin: 30px auto 30px;
+            }
+            a {
+                display: block;
+                text-align: center;
+                width: 138px;
+                height: 47px;
+                line-height: 47px;
+                font-family: $pt;
+                text-decoration: none;
+                color: $white;
+                border: 1px solid $white;
+                background: transparent;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1325px) {
+    .collection {
+        margin: 0 auto;
+        flex-wrap: wrap;
+        .collection-left {
+            flex-basis: 100%;
+            .products {
+                flex-wrap: wrap;
+                margin: 0 auto;
+                .product-box {
+                    margin: 25px auto 25px;
+                }
+            }
+        }
+        .collection-right {
+            flex-basis: 100%;
+        }
+    }
+}
