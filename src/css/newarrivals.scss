@@ -1,0 +1,57 @@
+$pt:'PT Sans',
+sans-serif;
+$playfair:'Playfair Display',
+sans-serif;
+$postno:'PostNoBillsJaffnaRegular400',
+sans-serif;
+$black: #000000;
+$white: #ffffff;
+$navbg:#0F0F0F;
+.newarrivals {
+    text-align: center;
+    h1 {
+        font-size: 36px;
+        font-family: $playfair;
+        line-height: 48px;
+        padding-top: 120px;
+    }
+    .line {
+        height: 1px;
+        width: 120px;
+        background: $white;
+        margin: 40px auto 80px;
+    }
+    .newbox {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1100px;
+        margin: 0 auto;
+        .product-box {
+            flex-basis: 20%;
+            margin: 0 auto;
+            .img-box {
+                width: 260px;
+                height: 325px;
+                background: #191B1C;
+                margin-right: 0;
+                img {
+                    padding-top: 55px;
+                }
+            }
+            h3 {
+                font-family: $playfair;
+                font-size: 18px;
+                line-height: 24px;
+                margin: 25px 0 10px;
+                text-align: start;
+            }
+            p {
+                font-family: $playfair;
+                font-size: 16px;
+                line-height: 21px;
+                text-align: start;
+                margin-bottom: 93px;
+            }
+        }
+    }
+}
