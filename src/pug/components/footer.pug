@@ -1,0 +1,14 @@
+footer.footer
+    -var our = "ваши"
+    case our
+        when "наши"
+            h1 наши бренды
+        when "ваши"
+            h1 ваши бренды
+        
+    .line 
+    .ads-box 
+        -var images = ["./img/footer.png","./img/footer.png","./img/footer.png","./img/footer.png",]
+            each val in images 
+                img(src=`${val}`, alt="fotter image")
+
