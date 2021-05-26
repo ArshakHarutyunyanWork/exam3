@@ -1,16 +1,31 @@
-$pt:'PTSans-Regular',
-sans-serif;
-$playfair:'PlayfairDisplay-VariableFont_wght',
-sans-serif;
-$postno:'PostNoBillsJaffnaRegular400',
-sans-serif;
+@font-face {
+    font-family: 'PlayfairDisplay-VariableFont_wght';
+    src: url("../fonts/fonts/PlayfairDisplay-VariableFont_wght.woff");
+    src: url("../fonts/fonts/PlayfairDisplay-VariableFont_wght.wof2");
+}
+
+@font-face {
+    font-family: 'PTSans-Regular';
+    src: url("../fonts/fonts/PTSans-Regular.woff");
+    src: url("../fonts/fonts/PTSans-Regular.woff2");
+}
+
+@font-face {
+    font-family: 'PostNoBillsJaffnaRegular400';
+    src: url("../fonts/fonts/PostNoBillsJaffnaRegular400.woff");
+    src: url("../fonts/fonts/PostNoBillsJaffnaRegular400.woff2");
+}
+
+$pt:'PTSans-Regular';
+$playfair:'PlayfairDisplay-VariableFont_wght';
+$postno:'PostNoBillsJaffnaRegular400';
 $black: #000000;
 $white: #ffffff;
 $navbg:#0F0F0F;
 .collection {
     display: flex;
     .collection-left {
-        flex-basis: 55%;
+        flex-basis: 52%;
         text-align: center;
         h1 {
             margin: 93px 0 50px;
@@ -53,7 +68,7 @@ $navbg:#0F0F0F;
         }
     }
     .collection-right {
-        flex-basis: 45%;
+        flex-basis: 48%;
         background-image: url(../img/collectionleftbg.jpg);
         min-height: 730px;
         background-size: cover;
