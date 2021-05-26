@@ -1,0 +1,76 @@
+$pt:'PT Sans',
+sans-serif;
+$playfair:'Playfair Display',
+sans-serif;
+$postno:'PostNoBillsJaffnaRegular400',
+sans-serif;
+$black: #000000;
+$white: #ffffff;
+$navbg:#0F0F0F;
+.collection2018 {
+    display: flex;
+    .collection2018-left {
+        flex-basis: 45%;
+        background-image: url(../img/collection2018bg.jpg);
+        min-height: 600px;
+        background-size: cover;
+    }
+    .collection2018-right {
+        flex-basis: 55%;
+        display: inline-block;
+        text-align: center;
+        h1 {
+            font-size: 36px;
+            line-height: 48px;
+            text-transform: uppercase;
+            font-weight: 400;
+            padding-top: 100px;
+        }
+        .line {
+            height: 1px;
+            width: 120px;
+            background: $white;
+            margin: 40px auto 40px;
+        }
+        p {
+            max-width: 470px;
+            margin: 0 auto;
+            line-height: 21px;
+            font-size: 14px;
+            text-align: center;
+            font-family: $pt;
+            padding: 5px;
+        }
+        a {
+            display: block;
+            text-align: center;
+            width: 311px;
+            height: 47px;
+            line-height: 47px;
+            font-family: $pt;
+            text-decoration: none;
+            color: $white;
+            border: 1px solid $white;
+            background: transparent;
+            margin: 60px auto 100px;
+            &:hover {
+                background: $white;
+                opacity: 0.5;
+                color: $black
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1325px) {
+    .collection2018 {
+        margin: 0 auto;
+        flex-wrap: wrap;
+        .collection2018-left {
+            flex-basis: 100%;
+        }
+        .collection2018-right {
+            flex-basis: 100%;
+        }
+    }
+}
