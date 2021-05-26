@@ -87,6 +87,11 @@ $navbg:#0F0F0F;
                 border: 1px solid $white;
                 background: transparent;
                 margin: 0 auto;
+                &:hover {
+                    background: $white;
+                    opacity: 0.5;
+                    color: $black
+                }
             }
         }
     }
