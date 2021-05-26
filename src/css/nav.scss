@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Playfair Display', sans-serif;
+    src: ("../fonts/PlayfairDisplay-VariableFont_wght.woff");
+}
+
+@font-face {
+    font-family: 'Playfair Display', sans-serif;
+    src: ("../fonts/PlayfairDisplay-VariableFont_wght.wof2");
+}
+
+@font-face {
+    font-family: 'PT Sans', sans-serif;
+    src: ("../fonts/PTSans-Regular.woff");
+}
+
+@font-face {
+    font-family: 'PT Sans', sans-serif;
+    src: ("../fonts/PTSans-Regular.woff2");
+}
+
+@font-face {
+    font-family: 'PostNoBillsJaffna', sans-serif;
+    src: ("../fonts/PostNoBillsJaffna-Regular.woff");
+}
+
+@font-face {
+    font-family: 'PostNoBillsJaffna', sans-serif;
+    src: ("../fonts/PostNoBillsJaffna-Regular.woff2");
+}
+
+$pt:'PT Sans',
+sans-serif;
+$playfair:'Playfair Display',
+sans-serif;
+$postno:'PostNoBillsJaffna',
+sans-serif;
+$black: #000000;
+$white: #ffffff;
+$navbg:#0F0F0F;
+body {
+    font-family: $playfair;
+    background: $black;
+    color: $white;
+    max-width: 1920px;
+}
+
+.nav {
+    background: $navbg;
+    min-height: 80px;
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1100px;
+        margin: 0 auto;
+        .logo {
+            text-decoration: none;
+            color: $white;
+            line-height: 80px;
+            margin-left: 40px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        #menu {
+            ul {
+                display: flex;
+                li {
+                    list-style-type: none;
+                    margin-right: 40px;
+                    line-height: 80px;
+                    a {
+                        text-decoration: none;
+                        color: $white;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                &:nth-child(3) {
+                    margin-right: 60px;
+                }
+                &:nth-child(4) {
+                    margin-right: 51px;
+                    padding-top: 10px;
+                }
+                &:nth-child(5) {
+                    margin-right: 0px;
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+    #mobile-menu-btn {
+        display: none;
+        cursor: pointer;
+        svg {
+            width: 30px;
+            height: 30px;
+            fill: $white;
+        }
+    }
+    @media screen and (max-width: 700px) {
+        position: relative;
+        #mobile-menu-btn {
+            display: block;
+            order: 2;
+            margin-top: 25px;
+            margin-right: 25px;
+        }
+        #menu {
+            position: absolute;
+            top: 80px;
+            right: 0;
+            max-width: 320px;
+            transform: translateY(-980px);
+            transition: all 0.3s;
+            &.menu-active {
+                transform: translateY(0px);
+                transition: all 0.3s;
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding: 10px;
+                border: 2px solid $white;
+                background: $navbg;
+                border-radius: 20px;
+                margin-right: 20px;
+                li {
+                    margin-right: 10px;
+                    line-height: 40px;
+                    a {}
+                }
+            }
+        }
+    }
+}
