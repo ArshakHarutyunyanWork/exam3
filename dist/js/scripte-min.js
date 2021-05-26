@@ -1,0 +1,1 @@
+window.addEventListener("load",()=>{document.querySelector("#mobile-menu-btn").addEventListener("click",()=>{menu.classList.toggle("menu-active")})});
